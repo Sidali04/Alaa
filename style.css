@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #111;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+header #Alaa_logo{
+    width: 50px;
+    height: 8vh;
+    border: 7px double white;
+    position: absolute;
+    top: 3px;
+    left: 3%;
+    cursor: pointer;
+}
+header i{
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+header ul{
+    width: 50%;
+    height: 0vh;
+    position: absolute;
+    top: 10vh;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #111111e0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+header ul hr{
+    margin-top: 20px;
+    color: gray;
+}
+header ul li{
+    margin-top: 20px;
+    margin-left: 20%;
+    list-style: none;
+    font-size: 13px;
+}
+nav{
+    width: 100%;
+    height: 70vh;
+    background-color: #222;
+}
+nav #paragraph1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    top: 100px;
+    left: -22%;
+    color: white;
+}
+nav #paragraph2{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 230px;
+    left: -15%;
+    color: white;
+}
+nav button{
+    width: 25%;
+    height: 7vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+nav #About_me{
+    position: absolute;
+    top: 350px;
+    left: 15%;
+    background-color: #222;
+    color: white;
+}
+nav #About_me:hover{
+    background-color: #f0f0f0;
+    color: black;
+}
+nav #View_project{
+    position: absolute;
+    top: 350px;
+    left: 53%;
+}
+nav #View_project:hover{
+    background-color: black;
+    color: #f0f0f0;
+}
+article{
+    width: 100%;
+    height: 70vh;
+    background-image: url('facade 04.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+    overflow: hidden;
+    animation: image_change_size 20s ease infinite;
+    
+}
+aside{
+    width:100%;
+    height: 90vh;
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 150px;
+    display: none;
+}
+aside #Alaa_is_photo{
+    width: 35%;
+    height: 25vh;
+    position: absolute;
+    top: 15px;
+    left: 5%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px #676666;
+}
+aside #Full_name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    left: 27%;
+    color: black;
+}
+aside #discription{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 12rem;
+    left: -13%;
+    color: black;
+}
+aside #return_menu{
+    position: absolute;
+    bottom: 4vh;
+    left: 10%;
+    width: 25%;
+    height: 7vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+aside #return_menu:hover{
+    background-color: #111;
+    color: white;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+}
+footer ul{
+    position: absolute;
+    left: 10%;
+    list-style: none;
+}
+footer ul li{
+    color: white;
+    margin: 15px 10px 10px 10px;
+    transition: .4s;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .4s;
+}
+footer ul li:hover,footer ul li a:hover{
+    color: #3efc0a;
+}
+@keyframes image_change_size {
+    0%{background-size: 150% 100%;}
+    25%{background-size: 155% 105%;}
+    50%{background-size: 160% 110%;}
+    75%{background-size: 155% 105%;}
+    100%{background-size: 150% 100%;}
+}
